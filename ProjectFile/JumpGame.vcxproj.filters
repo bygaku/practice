@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Directory">
+      <UniqueIdentifier>{68023894-fbe7-401b-bd9d-9f5af29fb70a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\Core">
+      <UniqueIdentifier>{f8c532e8-4a8c-465f-b787-b69d51bd0dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\Object">
+      <UniqueIdentifier>{92209fc6-96fb-418f-80b6-ddf32687a278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\Object\Base">
+      <UniqueIdentifier>{24b68c5f-3d80-4ceb-a13d-8a86df58e0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\Tag">
+      <UniqueIdentifier>{e7e87426-0f0e-415a-8ad2-7b187293fc74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\_Don%27t Touch This">
+      <UniqueIdentifier>{97a74320-ce9a-4c62-9ebb-bfd9920ed496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\_Don%27t Touch This\Initializer">
+      <UniqueIdentifier>{fe69d805-1d1a-4698-b725-699a00cfb000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\_Don%27t Touch This\Utility">
+      <UniqueIdentifier>{9be650a6-8798-444d-aa75-4b6cd0256e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\_Don%27t Touch This\Data">
+      <UniqueIdentifier>{46e3177c-7ec6-4e8b-a804-bd22b5d3107c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\_Don%27t Touch This\Scene">
+      <UniqueIdentifier>{371ba81b-ceea-4595-9862-b5109b270a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\_Don%27t Touch This\Scene\Base">
+      <UniqueIdentifier>{aa725dc3-c463-4f7a-8753-bd871459a790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\Object\Box">
+      <UniqueIdentifier>{766339a7-6c13-4659-a8eb-0a713e69047c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\Object\Text">
+      <UniqueIdentifier>{efb24639-351b-4a2d-baa4-bcfc21548f3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Directory\Object\Plane">
+      <UniqueIdentifier>{60e063ec-f958-4ed2-b59e-598194d99e3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Directory\Core\game_manager.cpp">
+      <Filter>Directory\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Initializer\library_init.cpp">
+      <Filter>Directory\_Don%27t Touch This\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Initializer\window_init.cpp">
+      <Filter>Directory\_Don%27t Touch This\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Core\game_time.cpp">
+      <Filter>Directory\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Utility\assert_for_dxlib.cpp">
+      <Filter>Directory\_Don%27t Touch This\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Object\game_object.cpp">
+      <Filter>Directory\Object\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Scene\scene.cpp">
+      <Filter>Directory\_Don%27t Touch This\Scene\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Scene\title.cpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Scene\stage.cpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Scene\result.cpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Scene\load.cpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Core\scene_manager.cpp">
+      <Filter>Directory\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\main.cpp">
+      <Filter>Directory\_Don%27t Touch This</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Object\box.cpp">
+      <Filter>Directory\Object\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Object\text.cpp">
+      <Filter>Directory\Object\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Object\plane.cpp">
+      <Filter>Directory\Object\Plane</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Directory\Core\game_manager.hpp">
+      <Filter>Directory\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Initializer\library_init.hpp">
+      <Filter>Directory\_Don%27t Touch This\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Initializer\window_init.hpp">
+      <Filter>Directory\_Don%27t Touch This\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Data\window_data.hpp">
+      <Filter>Directory\_Don%27t Touch This\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Core\game_time.hpp">
+      <Filter>Directory\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Utility\assert_for_dxlib.hpp">
+      <Filter>Directory\_Don%27t Touch This\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Object\game_object.hpp">
+      <Filter>Directory\Object\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Scene\scene.hpp">
+      <Filter>Directory\_Don%27t Touch This\Scene\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Scene\title.hpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Scene\stage.hpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Scene\result.hpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Scene\load.hpp">
+      <Filter>Directory\_Don%27t Touch This\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Tag\scene_type.hpp">
+      <Filter>Directory\Tag</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Core\scene_manager.hpp">
+      <Filter>Directory\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Tag\object_tag.hpp">
+      <Filter>Directory\Tag</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Object\box.hpp">
+      <Filter>Directory\Object\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Object\text.hpp">
+      <Filter>Directory\Object\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Object\plane.hpp">
+      <Filter>Directory\Object\Plane</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

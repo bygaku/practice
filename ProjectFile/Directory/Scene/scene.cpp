@@ -47,9 +47,19 @@ void Scene::checkSceneState() noexcept
 	/// no processing on base class.
 }
 
-void Scene::AddObjectToScene(std::shared_ptr<GameObject> object, std::string name) noexcept
+void Scene::addObjectToScene(std::shared_ptr<GameObject> object, std::string name) noexcept
 {
 	objects_[name] = object;
+}
+
+void Scene::dontDestroyOnLoad(std::shared_ptr<GameObject> object, std::string name) noexcept
+{
+	dontDestroyObjects_[name] = object;
+}
+
+std::unordered_map<std::string, std::shared_ptr<GameObject>> Scene::getDontDestroyObjects() noexcept
+{
+	return dontDestroyObjects_;
 }
 
 void Scene::changeScene(std::string name)

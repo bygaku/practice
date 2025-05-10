@@ -36,9 +36,11 @@ void Box::lastUpdate() noexcept
 {
 }
 
-void Box::setColor(VECTOR color) noexcept
+void Box::setColor(VECTOR_D color) noexcept
 {
-
+	color_ = GetColor(static_cast<int>(color.x),
+					  static_cast<int>(color.y),
+					  static_cast<int>(color.z));
 }
 
 void Box::drawVerticalSquare(float yAxis) const noexcept

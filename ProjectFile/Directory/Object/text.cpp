@@ -1,5 +1,6 @@
 #include "DxLib.h"
 #include "Object/text.hpp"
+#include "Data/window_data.hpp"
 
 void Text::initialize() noexcept
 {
@@ -31,4 +32,11 @@ void Text::setText(std::string str, VECTOR color) noexcept
 	color_ = GetColor(static_cast<int>(color.x),
 					  static_cast<int>(color.y),
 					  static_cast<int>(color.z));
+}
+
+void Text::setTextCenter() noexcept
+{
+	int length_half = (str_.length() * fontSize_) / 4;
+	positionX_ = (WindowData::kWidth  / 2) - length_half;
+	positionY_ = (WindowData::kHeight / 2) - (fontSize_ / 2);
 }

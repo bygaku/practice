@@ -43,6 +43,9 @@
     <Filter Include="Directory\Object\Plane">
       <UniqueIdentifier>{60e063ec-f958-4ed2-b59e-598194d99e3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Directory\Object\Camera">
+      <UniqueIdentifier>{409175cc-8695-4e5e-8e45-cde48c7ed3c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Directory\Core\game_manager.cpp">
@@ -92,6 +95,9 @@
     </ClCompile>
     <ClCompile Include="Directory\Object\plane.cpp">
       <Filter>Directory\Object\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Directory\Object\camera.cpp">
+      <Filter>Directory\Object\Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +154,9 @@
     </ClInclude>
     <ClInclude Include="Directory\Object\plane.hpp">
       <Filter>Directory\Object\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory\Object\camera.hpp">
+      <Filter>Directory\Object\Camera</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

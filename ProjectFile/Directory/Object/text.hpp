@@ -16,6 +16,16 @@ public:
 	{
 	};
 
+	explicit Text(int fontSize)
+		: GameObject{ ObjectTag.TEXT }
+		, positionX_(0)
+		, positionY_(0)
+		, str_("")
+		, fontSize_(fontSize)
+		, color_(GetColor(255, 255, 255))
+	{
+	};
+
 	virtual ~Text() noexcept = default;
 
 	virtual void initialize() noexcept override;
@@ -26,6 +36,9 @@ public:
 	/// @brief 表示テキストをセット
 	void setText(std::string str) noexcept;
 	void setText(std::string str, VECTOR color) noexcept;
+
+	/// @brief テキストを中央に表示
+	void setTextCenter() noexcept;
 
 private:
 	int			positionX_;

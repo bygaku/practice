@@ -48,6 +48,11 @@ void Game::update() noexcept
 	sceneManager_->update();
 	sceneManager_->draw();
 
+	auto length_half = 500.f;
+	DrawLine3D(VGet(-length_half, 0, 0), VGet(length_half, 0, 0), GetColor(255, 0, 0));
+	DrawLine3D(VGet(0, -length_half, 0), VGet(0, length_half, 0), GetColor(0, 255, 0));
+	DrawLine3D(VGet(0, 0, -length_half), VGet(0, 0, length_half), GetColor(0, 0, 255));
+
 	gameTime_->sleepForNextFrame();
 	gameTime_->incrementFrame();
 }

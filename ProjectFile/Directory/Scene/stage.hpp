@@ -4,11 +4,7 @@
 class StageScene final : public Scene
 {
 public:
-	StageScene(SceneManager& manager) noexcept
-		: Scene(SceneType.STAGE, manager)
-	{
-		initialize();
-	};
+	StageScene(SceneManager& manager) noexcept;
 
 	virtual void checkSceneState() noexcept override;
 };

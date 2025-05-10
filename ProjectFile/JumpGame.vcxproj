@@ -162,6 +162,7 @@
     <ClCompile Include="Directory\Initializer\window_init.cpp" />
     <ClCompile Include="Directory\main.cpp" />
     <ClCompile Include="Directory\Object\box.cpp" />
+    <ClCompile Include="Directory\Object\camera.cpp" />
     <ClCompile Include="Directory\Object\game_object.cpp" />
     <ClCompile Include="Directory\Object\plane.cpp" />
     <ClCompile Include="Directory\Object\text.cpp" />
@@ -180,6 +181,7 @@
     <ClInclude Include="Directory\Initializer\library_init.hpp" />
     <ClInclude Include="Directory\Initializer\window_init.hpp" />
     <ClInclude Include="Directory\Object\box.hpp" />
+    <ClInclude Include="Directory\Object\camera.hpp" />
     <ClInclude Include="Directory\Object\game_object.hpp" />
     <ClInclude Include="Directory\Object\plane.hpp" />
     <ClInclude Include="Directory\Object\text.hpp" />

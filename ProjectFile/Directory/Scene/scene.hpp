@@ -30,8 +30,13 @@ public:
 	virtual void checkSceneState() noexcept;
 
 	/// @brief シーンにオブジェクトを追加
-	void AddObjectToScene(std::shared_ptr<GameObject> object, std::string name) noexcept;
-	
+	void addObjectToScene(std::shared_ptr<GameObject> object, std::string name) noexcept;
+
+	/// @brief すべてのシーンに適応するオブジェクトを追加
+	/// @memo 明示的な破棄の機能追加 => オブジェクト管理クラスでね★
+	void dontDestroyOnLoad(std::shared_ptr<GameObject> object, std::string name) noexcept;
+
+	std::unordered_map<std::string, std::shared_ptr<GameObject>> getDontDestroyObjects() noexcept;
 protected:
 	SceneManager& manager_;
 	
@@ -40,6 +45,7 @@ protected:
 private:
 	std::string tag_;
 	std::unordered_map<std::string, std::shared_ptr<GameObject>> objects_;
+	std::unordered_map<std::string, std::shared_ptr<GameObject>> dontDestroyObjects_;
 
 	float time_;
 };

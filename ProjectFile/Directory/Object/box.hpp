@@ -22,7 +22,7 @@ public:
 	virtual void lastUpdate() noexcept override;
 
 	/// @brief 色をセット
-	void setColor(VECTOR color) noexcept;
+	void setColor(VECTOR_D color) noexcept;
 
 private:
 	/// @brief 四角形を線で描画

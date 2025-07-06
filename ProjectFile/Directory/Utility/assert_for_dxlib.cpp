@@ -2,16 +2,16 @@
 #include "format"
 #include "DxLib.h"
 
-namespace gaku_utils
+namespace utilitys
 {
-    [[noreturn]] void ErrorAssert(
+    [[noreturn]] void errorAssert(
         std::string_view conditional_expression,
         std::string_view error_mes,
         std::string_view file,
         std::string_view func,
         int line)
     {
-        // DxLibがまだ初期化されていない場合は、終了する。
+        // DxLibがまだ初期化されていない場合は強制終了
         if (DxLib_IsInit() != TRUE)
         {
             std::fprintf(stderr, "DxLib is not initialized.\n");
@@ -19,7 +19,7 @@ namespace gaku_utils
         }
 
         clsDx();
-        printfDx("%s", error_constants::assertion_header);
+        printfDx("%s", error_constants::kAssertionHeader);
 
         printfDx("%s", std::format("Error Condition : {}\n\n",  conditional_expression).c_str());
         printfDx("%s", std::format("Error Cause : {}\n\n",      error_mes).c_str());
@@ -36,8 +36,8 @@ namespace gaku_utils
 
         DxLib_End();
 
-        // プログラムを終了する。
-        std::exit(error_constants::exit_code);
+        // プログラムを終了
+        std::exit(error_constants::kExitCode);
     }
 
 }

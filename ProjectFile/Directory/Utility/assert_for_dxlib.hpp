@@ -9,10 +9,10 @@
 #include "string_view"
 #include "source_location"
 
-namespace gaku_utils
+namespace utilitys
 {
     /// @brief エラーメッセージを表示して終了する関数
-    [[noreturn]] void ErrorAssert(
+    [[noreturn]] void errorAssert(
         std::string_view conditional_expression,
         std::string_view error_mes,
         std::string_view file,
@@ -22,8 +22,8 @@ namespace gaku_utils
     /// @brief エラーに関連する定数
     namespace error_constants 
     {
-        constexpr int exit_code = 99;
-        constexpr auto assertion_header =
+        constexpr int  kExitCode = 99;
+        constexpr auto kAssertionHeader =
             "Assertion Error! Please press 'X button' or 'Escape key' on the window to exit!\n\n";
     }
 }
@@ -47,7 +47,7 @@ do {                                                                    \
         }                                                               \
         else                                                            \
         {                                                               \
-            gaku_utils::ErrorAssert(#expr, error_message,               \
+            utilitys::errorAssert(#expr, error_message,                 \
                 location.file_name(), location.function_name(),         \
                 location.line());                                       \
         }                                                               \

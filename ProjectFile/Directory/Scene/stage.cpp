@@ -43,4 +43,9 @@ void StageScene::checkSceneState() noexcept
 	{
 		changeScene(SceneType.RESULT);
 	}
+
+	if (CheckHitKey(KEY_INPUT_T))
+	{
+		changeScene(SceneType.TITLE);
+	}
 }

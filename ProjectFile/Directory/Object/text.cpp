@@ -36,7 +36,8 @@ void Text::setText(std::string str, VECTOR color) noexcept
 
 void Text::setTextCenter() noexcept
 {
-	int length_half = (str_.length() * fontSize_) / 4;
+	int length_half = (static_cast<int>(str_.length()) * fontSize_) / 4;
+
 	positionX_ = (WindowData::kWidth  / 2) - length_half;
 	positionY_ = (WindowData::kHeight / 2) - (fontSize_ / 2);
 }
